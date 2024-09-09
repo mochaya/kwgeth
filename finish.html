@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>川越飲食店サイト作成ページ</title>
+    <link rel="stylesheet" href="finish.css">
+</head>
+<body>
+    <div class="container">
+        <h1>川越飲食店サイト作成ページ</h1>
+
+        <div class="content">
+            <div class="message">
+                <h2>QRコードの作成が完了しました!</h2>
+                <p>右の画像からダウンロードしてください</p>
+            </div>
+
+            <div class="qr-code">
+                <img src="qrcode.png" alt="QRコードだよ" id="qrImage">
+            </div>
+        </div>
+
+        <button class="finish-btn" onclick="finishPage()">終了</button>
+    </div>
+
+    <script>
+        function finishPage() {
+            window.location.href = "main.html"; // 遷移先のURLを指定
+        }
+    </script>
+</body>
+</html>
